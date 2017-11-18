@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.estagio3.dog_care.MainActivity"
+    android:background="@drawable/back"
+    android:backgroundTint="@color/fundo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ScrollView>
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@drawable/back">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/photo2"-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_above="@+id/vacinacao"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/perfil" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/nome1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/idade"-->
+            <!--android:layout_alignRight="@+id/idade"-->
+            <!--android:layout_below="@+id/add"-->
+            <!--android:layout_marginTop="27dp"-->
+            <!--android:text="NOME:" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/idade"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/peso1"-->
+            <!--android:layout_marginBottom="25dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_toEndOf="@+id/photo2"-->
+            <!--android:layout_toRightOf="@+id/photo2"-->
+            <!--android:text="IDADE:" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/peso1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/photo2"-->
+            <!--android:layout_alignLeft="@+id/idade"-->
+            <!--android:layout_alignStart="@+id/idade"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:text="PESO:" />-->
+
+        <Button
+            android:id="@+id/vacinacao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:background="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/menu_back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/add"
+            android:layout_toStartOf="@+id/add"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/menu_back"
+            android:layout_alignBottom="@+id/menu_back"
+            android:layout_toEndOf="@+id/menu_back"
+            android:layout_toRightOf="@+id/menu_back"
+            android:background="@android:color/transparent" />
+
+        <!--<Button-->
+            <!--android:id="@+id/medicamentos"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/vacinacao"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:text="MEDICAMENTOS"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/informacoes"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/medicamentos"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:text="INFORMACOES"-->
+            <!--android:textAlignment="center" />-->
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fundo"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B9A4</color>
+    <color name="colorPrimaryDark">#00B9A4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="verde_app">#00B9A4</color>
+    <color name="verde_app2">#02e4ca</color>
+    <color name="cinza">#f4f4f4</color>
+    <color name="branco">#ffffff</color>
+    <color name="preto">#000000</color>
+    <color name="fundo">#fdfaf1</color>
+    <color name="fundo2">#379E9A</color>
+
+</resources>

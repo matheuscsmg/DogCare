@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="50dp"
+    tools:context="com.estagio3.dog_care.LoginActivity"
+    android:background="@color/fundo"
+    >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/magem" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtLEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="9dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtLSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Senha"
+            android:layout_marginRight="9dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:backgroundTint="@color/verde_app"
+            android:layout_marginRight="9dp"
+            android:text="entrar"
+            android:textColor="#fff"
+            android:background="@drawable/screen_border"/>
+
+        <Button
+            android:id="@+id/btnEntrarFace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="9dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:backgroundTint="#303F9F"
+            android:textColor="#fff"
+            android:text="ENTRAR COM FACEBOOK"
+            android:background="@drawable/screen_border"/>
+
+
+        <TextView
+            android:id="@+id/novoCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Não possui uma conta? Cadastre-se aqui!"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

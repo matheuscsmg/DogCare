@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "167049171728",
+    "firebase_url": "https://dogcare-24395.firebaseio.com",
+    "project_id": "dogcare-24395",
+    "storage_bucket": "dogcare-24395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167049171728:android:edba2b4fc3bb8562",
+        "android_client_info": {
+          "package_name": "com.estagio3.dog_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167049171728-0s57nqqgbuk8da7nn4f3qv4rch93hjmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.estagio3.dog_care",
+            "certificate_hash": "248fe7c1200c5d31097cc9b8546e5f931f24f826"
+          }
+        },
+        {
+          "client_id": "167049171728-kdm02ghc84nf5skrjgd797tcdpi2ue4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAph2PjL46Oo24oJY8OAZp_MOxoH56g5UU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167049171728-kdm02ghc84nf5skrjgd797tcdpi2ue4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tituloTabela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:text="Tabela Básica de Vacinação"
+                android:layout_span="3"
+                android:paddingTop="15dp"
+                android:textColor="#000"/>
+            <!--android:padding="15dip"-->
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tituloTabela2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:text="Depois do primeiro ano, o animal é vacinado anualmente com uma dose de cada vacina. A melhor maneira de organizar o calendário de imunização é fazendo todas as vacinas em uma mesma data que deve ser repetida anualmente"
+                android:layout_span="4"
+                android:padding="10dip"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:background="@color/fundo2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/idadeTabela"
+                android:text="Idade"
+                android:layout_weight="2"
+                android:textColor="@color/branco"
+                android:textStyle="bold"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/vacinaTabela"
+                android:text="Vacina"
+                android:layout_weight="1"
+                android:textColor="@color/branco"
+                android:textStyle="bold"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dataTabela"
+                android:text="Data"
+                android:layout_weight="1"
+                android:textColor="@color/branco"
+                android:textStyle="bold"
+                android:padding="20dip"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/statusTabela"
+                android:text="Status"
+                android:layout_weight="1"
+                android:textColor="@color/branco"
+                android:textStyle="bold"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_1mes"
+                android:text="1 mês"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_vermifugo"
+                android:text="Vermífugo"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data1"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_2meses"
+                android:text="2 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_v10"
+                android:text="V8 ou V10"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data2"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status2"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_3meses"
+                android:text="3 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_V102"
+                android:text="V8 ou V10 reforço"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data3"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status3"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_3meses2"
+                android:text="3 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_gripe"
+                android:text="Gripe Canina"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data4"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status4"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_3meses3"
+                android:text="3 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_giardiase"
+                android:text="Giardíase"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data6"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status6"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_4meses"
+                android:text="4 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_V104"
+                android:text="V8 ou V10 reforço"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data7"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status7"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_4meses2"
+                android:text="4 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_gripe2"
+                android:text="Gripe Canina reforço"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data8"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status8"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_4meses3"
+                android:text="4 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_giardiase2"
+                android:text="Giardíase reforço"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data9"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status9"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/_4meses4"
+                android:text="4 meses"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/_rabica"
+                android:text="Anti-rábica"
+                android:layout_weight="2"
+                android:textColor="#000000"
+                android:layout_width="10dip"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/_data11"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/_status11"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="15dip"
+                android:layout_gravity="end"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>

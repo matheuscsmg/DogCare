@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.estagio3.dog_care.PerfilActivity"
+    android:background="@color/fundo">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/fundo">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="270dp"
+            android:layout_height="199dp"
+            android:layout_gravity="center"
+            android:src="@drawable/adicione"
+            android:layout_marginBottom="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/verde_app"/>
+
+        <EditText
+            android:id="@+id/nomeDog"
+            android:hint="Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/raca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Raça" />
+
+        <EditText
+            android:id="@+id/peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso"
+            android:inputType=""/>
+
+        <EditText
+            android:id="@+id/idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Idade:"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:paddingTop="2dp"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/Sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="7dp">
+
+                <RadioButton
+                    android:id="@+id/Masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Macho"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/Feminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fêmea" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonGravar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="GRAVAR"
+                android:backgroundTint="@color/verde_app"
+                android:background="@drawable/screen_border"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
