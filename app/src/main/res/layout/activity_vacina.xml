@@ -111,6 +111,7 @@
             <EditText
                 android:id="@+id/_data1"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -150,6 +151,7 @@
             <EditText
                 android:id="@+id/_data2"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -190,6 +192,7 @@
             <EditText
                 android:id="@+id/_data3"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -230,6 +233,7 @@
             <EditText
                 android:id="@+id/_data4"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -270,6 +274,7 @@
             <EditText
                 android:id="@+id/_data6"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -311,6 +316,7 @@
                 android:id="@+id/_data7"
                 android:inputType="date"
                 android:layout_weight="1"
+                android:hint="01/01"
                 android:textColor="#000000"
                 android:padding="20dip"
                 android:gravity="center"/>
@@ -350,6 +356,7 @@
             <EditText
                 android:id="@+id/_data8"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -391,6 +398,7 @@
                 android:id="@+id/_data9"
                 android:inputType="date"
                 android:layout_weight="1"
+                android:hint="01/01"
                 android:textColor="#000000"
                 android:padding="20dip"
                 android:gravity="center"/>
@@ -430,6 +438,7 @@
             <EditText
                 android:id="@+id/_data11"
                 android:inputType="date"
+                android:hint="01/01"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:padding="20dip"
@@ -445,6 +454,20 @@
 
         </TableRow>
 
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/salvarVacina"
+                android:text="Salvar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+
+        </TableRow>
 
     </TableLayout>
 

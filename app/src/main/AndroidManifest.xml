@@ -4,13 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/magem"
+        android:icon="@drawable/logo_teste"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/magem"
+        android:roundIcon="@drawable/logo_teste"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,20 +20,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            />
-        <activity android:name=".MainActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".PerfilActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".VacinaActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".MedicacaoActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".UsuarioActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".Main2Activity"></activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PerfilActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VacinaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MedicacaoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RemedioItemActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>

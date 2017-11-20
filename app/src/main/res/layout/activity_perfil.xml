@@ -43,14 +43,14 @@
             android:id="@+id/peso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Peso"
+            android:hint="Peso (ex: 5 kg)"
             android:inputType=""/>
 
         <EditText
             android:id="@+id/idade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Idade:"
+            android:hint="Idade (ex: 3 anos)"
             android:layout_gravity="center_vertical"
             />
 

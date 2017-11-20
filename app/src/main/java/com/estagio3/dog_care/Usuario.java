@@ -15,16 +15,27 @@ public class Usuario implements Serializable {
     String email;
     String senha;
     String idAnimal;
+    List <String> idRemedio;
+
 
     public Usuario() {
     }
 
-    public Usuario(String id, String name, String email, String senha, String idAnimal) {
+    public Usuario(String id, String name, String email, String senha, String idAnimal, List<String> idRemedio) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.senha = senha;
         this.idAnimal = idAnimal;
+        this.idRemedio = idRemedio;
+    }
+
+    public List<String> getIdRemedio() {
+        return idRemedio;
+    }
+
+    public void setIdRemedio(List<String > idRemedio) {
+        this.idRemedio = idRemedio;
     }
 
     public void setIdAnimal(String idAnimal) {

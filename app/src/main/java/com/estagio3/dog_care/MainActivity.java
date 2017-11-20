@@ -13,7 +13,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity  {
 
     private Button add;
-    private Button vacinacao;
+    private Button perfil;
     private Button menu_beck;
 
 
@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
-        vacinacao = (Button) findViewById(R.id.vacinacao);
+        perfil = (Button) findViewById(R.id.perfil);
 
-        vacinacao.setOnClickListener(new View.OnClickListener(){
+        perfil.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent it = new Intent(MainActivity.this, MedicacaoActivity.class);
+                Intent it = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(it);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity  {
 
         menu_beck.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent it = new Intent(MainActivity.this, Main2Activity.class);
+                Intent it = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(it);
             }
         });

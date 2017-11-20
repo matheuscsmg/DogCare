@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Dog Care</string>
+    <string-array name="genres">
+        <item>Anti-pulgas e Carrapatos</item>
+        <item>Antibióticos</item>
+        <item>Homeopáticos</item>
+        <item>Vitaminas e Suplementos</item>
+        <item>Tratamento para Pele</item>
+
+    </string-array>
 </resources>

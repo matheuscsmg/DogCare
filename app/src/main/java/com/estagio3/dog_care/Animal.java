@@ -18,6 +18,7 @@ public class Animal implements Serializable {
     private String sexo;
     private String photo;
 
+
     public Animal(){
 
     }

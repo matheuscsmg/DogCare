@@ -119,9 +119,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             //inicio de um perfil aqui
                             //mostra apenas a tela
                             final String id = UUID.randomUUID().toString();
+                            final List<String> lista = null;
+
                             Toast.makeText(RegisterActivity.this, "Registrado com sucesso", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = firebaseAuth.getCurrentUser();
-                            Usuario u = new Usuario(user.getUid(), edtName.getText().toString().trim(), editTextEmail.getText().toString().trim(), editTextPassword.getText().toString().trim(), "");
+                            Usuario u = new Usuario(user.getUid(), edtName.getText().toString().trim(), editTextEmail.getText().toString().trim(), editTextPassword.getText().toString().trim(), "", lista);
 
                             dbRef.child(user.getUid()).setValue(u);
 

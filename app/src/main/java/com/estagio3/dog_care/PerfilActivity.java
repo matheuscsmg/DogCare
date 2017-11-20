@@ -137,17 +137,17 @@ public class PerfilActivity extends AppCompatActivity implements View.OnClickLis
                 //e-mail vazio
                 Toast.makeText(this, "Por favor insira o nome do animal", Toast.LENGTH_SHORT).show();
                 return;
-            } else if (TextUtils.isEmpty(idade2)){
-                //senha vazia
-                Toast.makeText(this, "Por favor insira a idade do animal", Toast.LENGTH_SHORT).show();
-                return;
-            }else if (TextUtils.isEmpty(peso2)){
-                //senha vazia
-                Toast.makeText(this, "Por favor insira o peso do animal", Toast.LENGTH_SHORT).show();
-                return;
             }else if (TextUtils.isEmpty(raca2)){
                 //senha vazia
                 Toast.makeText(this, "Por favor insira a raça do animal", Toast.LENGTH_SHORT).show();
+                return;
+            } else if (TextUtils.isEmpty(peso2)){
+                //senha vazia
+                Toast.makeText(this, "Por favor insira o peso do animal", Toast.LENGTH_SHORT).show();
+                return;
+            } else if (TextUtils.isEmpty(idade2)){
+                //senha vazia
+                Toast.makeText(this, "Por favor insira a idade do animal", Toast.LENGTH_SHORT).show();
                 return;
             }
 

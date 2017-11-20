@@ -37,6 +37,8 @@ public class Main2Activity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private Button vacinacao2;
+    private Button medic;
+    private Button perfil;
     private Button menu_beck2;
     private CircleImageView imageView;
     private TextView nome1;
@@ -44,6 +46,7 @@ public class Main2Activity extends AppCompatActivity {
     private TextView idade;
     private TextView peso1;
     private TextView sexo1;
+    private TextView info;
     FirebaseUser user;
 
 
@@ -71,6 +74,26 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+
+        medic = (Button) findViewById(R.id.medic);
+
+        medic.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent it = new Intent(Main2Activity.this, MedicacaoActivity.class);
+                startActivity(it);
+            }
+        });
+
+        perfil = (Button) findViewById(R.id.perfil);
+
+
+        perfil.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent it = new Intent(Main2Activity.this, Main2Activity.class);
+                startActivity(it);
+            }
+        });
+
         menu_beck2 = (Button) findViewById(R.id.menu_back);
 
 
@@ -80,6 +103,18 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+
+
+        info = (TextView) findViewById(R.id.textView);
+
+        info.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent it = new Intent(Main2Activity.this, InfoActivity.class);
+                startActivity(it);
+            }
+        });
+
 
         Button exit2 = (Button) findViewById(R.id.exit);
         exit2.setOnClickListener(new View.OnClickListener(){
@@ -170,7 +205,7 @@ public class Main2Activity extends AppCompatActivity {
                         sexo1.setText(a.getSexo());
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(), "Animal não encontrado!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Nenhum animal adicionado!", Toast.LENGTH_SHORT).show();
                 }
             }
 
